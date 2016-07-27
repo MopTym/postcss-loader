@@ -61,9 +61,9 @@ module.exports = function (source, map) {
 
     postcss(plugins).process(source, opts)
         .then(function (result) {
-            result.warnings().forEach(function (msg) {
-                loader.emitWarning(msg.toString());
-            });
+            // result.warnings().forEach(function (msg) {
+            //     loader.emitWarning(msg.toString());
+            // });
             callback(null, result.css, result.map ? result.map.toJSON() : null);
         })
         .catch(function (error) {

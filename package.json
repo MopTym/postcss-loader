@@ -1,11 +1,14 @@
 {
-  "name": "postcss-loader",
+  "name": "postcss-loader-no-warning",
   "version": "0.9.1",
-  "description": "PostCSS loader for webpack",
+  "description": "PostCSS loader for webpack (no-warning). Deprecated at any time.",
   "keywords": ["webpack", "loader", "css", "postcss", "postcss-runner"],
-  "author": "Andrey Sitnik <andrey@sitnik.ru>",
+  "author": "Andrey Sitnik <andrey@sitnik.ru>, MopTym <moptym@163.com>",
   "license": "MIT",
-  "repository": "postcss/postcss-loader",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MopTym/postcss-loader.git"
+  },
   "dependencies": {
     "loader-utils": "^0.2.14",
     "postcss":      "^5.0.19"
